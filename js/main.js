@@ -1,7 +1,5 @@
 (function(){
   const $ = (id) => document.getElementById(id);
-
-  // 所有成对元素：英文显示、中文显示（通过统一 ID 规则管理）
   const pairs = [
     ["name-en","name-zh"],
     ["about-en","about-zh"],
@@ -20,26 +18,26 @@
 
   function showLang(lang){
     pairs.forEach(([en,zh])=>{
-      if ($(en) && $(zh)){
-        $(en).style.display = (lang === "en" ? "" : "none");
-        $(zh).style.display = (lang === "zh" ? "" : "none");
+      const enEl = $(en), zhEl = $(zh);
+      if (enEl && zhEl){
+        enEl.style.display = (lang === "en" ? "" : "none");
+        zhEl.style.display = (lang === "zh" ? "" : "none");
       }
     });
-    // 导航栏按钮状态可选：略
     localStorage.setItem("lang", lang);
   }
 
-  // 按钮
   const btnEn = $("lang-en");
   const btnZh = $("lang-zh");
   if (btnEn) btnEn.addEventListener("click", ()=>showLang("en"));
   if (btnZh) btnZh.addEventListener("click", ()=>showLang("zh"));
 
-  // 初始语言：从存储恢复，默认英文
+  // 默认英文；如果本地存过中文，就用中文
   const saved = localStorage.getItem("lang");
   showLang(saved === "zh" ? "zh" : "en");
 
-  // 年份
-  const yearEl = $("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  // 页脚年份
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 })();
+

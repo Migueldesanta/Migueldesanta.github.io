@@ -4,83 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Xin (Michael) Yun · Portfolio</title>
-  <meta name="description" content="Portfolio of Xin (Michael) Yun — Statistics & Political Science, data science, elections & public opinion, LLM applications." />
+  <meta name="description" content="Xin (Michael) Yun — Statistics & Political Science · Elections, Public Opinion, LLM in PolSci." />
+  <!-- 推荐字体：Inter（可选，不装也正常显示） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <!-- 顶部导航 -->
   <nav class="nav">
-    <div class="brand">
-      <span id="name-en">Xin (Michael) Yun</span>
-      <span id="name-zh" style="display:none;">云鑫</span>
-    </div>
-    <div class="nav-actions">
-      <a class="btn ghost" href="assets/resume.pdf" download>Resume</a>
-      <a class="btn ghost" target="_blank" href="https://github.com/Migueldesanta">GitHub</a>
-      <a class="btn ghost" target="_blank" href="https://linkedin.com/in/xinyun5160">LinkedIn</a>
-      <button class="btn" id="lang-en">EN</button>
-      <button class="btn" id="lang-zh">中文</button>
+    <div class="container nav-inner">
+      <div class="brand">
+        <span id="name-en">Xin (Michael) Yun</span>
+        <span id="name-zh" style="display:none;">云鑫</span>
+      </div>
+      <div class="nav-actions">
+        <a class="btn ghost" href="assets/resume.pdf" download>Resume</a>
+        <a class="btn ghost" target="_blank" href="https://github.com/Migueldesanta">GitHub</a>
+        <a class="btn ghost" target="_blank" href="https://linkedin.com/in/xinyun5160">LinkedIn</a>
+        <button class="btn" id="lang-en">EN</button>
+        <button class="btn" id="lang-zh">中文</button>
+      </div>
     </div>
   </nav>
 
-  <!-- 头图 / 关于我 -->
-  <header class="hero container">
-    <div class="profile">
-      <img class="avatar" src="assets/portrait.jpg" alt="Portrait of Xin (Michael) Yun" />
-    </div>
-
-    <div class="about">
-      <!-- 英文版 About -->
-      <section id="about-en">
-        <h1>Statistics × Political Science · Data & Politics</h1>
-        <p>
-          I'm Xin (Michael) Yun, a recent graduate from Penn State (B.S. in Statistics & Political Science).
-          I care about how data informs political behavior—especially
-          <strong>elections</strong> and <strong>public opinion</strong>. On the methods side, I work with
-          <strong>forecasting</strong>, <strong>statistical modeling</strong>, and <strong>R Shiny</strong>.
-        </p>
-        <p>
-          I'm also exploring <strong>LLM applications in political science</strong>—for example, analyzing speeches,
-          open-ended survey responses, and public discourse to better understand voter attitudes and policy debates.
-        </p>
-        <div class="cta">
-          <a class="btn" href="mailto:yun.xin@outlook.com">Email</a>
-          <a class="btn ghost" target="_blank" href="https://github.com/Migueldesanta">GitHub</a>
-          <a class="btn ghost" target="_blank" href="https://linkedin.com/in/xinyun5160">LinkedIn</a>
-          <a class="btn ghost" href="assets/resume.pdf" download>Download Resume (PDF)</a>
-        </div>
-      </section>
-
-      <!-- 中文版 About -->
-      <section id="about-zh" style="display:none;">
-        <h1>统计 × 政治 · 用数据理解政治行为</h1>
-        <p>
-          我是<strong>云鑫</strong>，毕业于宾州州立大学（统计学与政治学学士）。
-          关注以数据研究<strong>选举</strong>与<strong>公众舆论</strong>，在方法上侧重
-          <strong>预测分析</strong>、<strong>统计建模</strong>与<strong>R Shiny</strong>交互应用。
-        </p>
-        <p>
-          同时我也在探索<strong>大语言模型（LLM）在政治科学中的应用</strong>，如分析政治演讲、
-          问卷开放题与公共话语中的立场与情绪，以更细致地理解选民态度与政策讨论。
-        </p>
-        <div class="cta">
-          <a class="btn" href="mailto:yun.xin@outlook.com">邮箱联系</a>
-          <a class="btn ghost" target="_blank" href="https://github.com/Migueldesanta">GitHub</a>
-          <a class="btn ghost" target="_blank" href="https://linkedin.com/in/xinyun5160">LinkedIn</a>
-          <a class="btn ghost" href="assets/resume.pdf" download>下载简历（PDF）</a>
-        </div>
-      </section>
+  <!-- Hero：左文右图，更有呼吸感 -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <!-- EN -->
+        <section id="about-en">
+          <h1>Data & Politics, clearly told.</h1>
+          <p class="lead">
+            I'm Xin (Michael) Yun, a recent graduate in <strong>Statistics & Political Science</strong> from Penn State.
+            I focus on <strong>elections</strong>, <strong>public opinion</strong>, forecasting, statistical modeling, and
+            <strong>R&nbsp;Shiny</strong>. I'm also exploring how <strong>LLMs</strong> can help analyze speeches,
+            open-ended survey responses, and public discourse.
+          </p>
+          <div class="cta">
+            <a class="btn" href="mailto:yun.xin@outlook.com">Email</a>
+            <a class="btn ghost" target="_blank" href="https://github.com/Migueldesanta">GitHub</a>
+            <a class="btn ghost" target="_blank" href="https://linkedin.com/in/xinyun5160">LinkedIn</a>
+            <a class="btn ghost" href="assets/resume.pdf" download>Download PDF</a>
+          </div>
+        </section>
+        <!-- ZH -->
+        <section id="about-zh" style="display:none;">
+          <h1>把数据与政治讲清楚。</h1>
+          <p class="lead">
+            我是<strong>云鑫</strong>，宾州州立大学<strong>统计学与政治学</strong>学士。研究兴趣聚焦
+            <strong>选举</strong>与<strong>公众舆论</strong>，擅长预测分析、统计建模与<strong>R&nbsp;Shiny</strong>。
+            同时探索<strong>大语言模型（LLM）</strong>在政治科学中的应用，用于分析演讲文本、问卷开放题与公共话语。
+          </p>
+          <div class="cta">
+            <a class="btn" href="mailto:yun.xin@outlook.com">邮箱联系</a>
+            <a class="btn ghost" target="_blank" href="https://github.com/Migueldesanta">GitHub</a>
+            <a class="btn ghost" target="_blank" href="https://linkedin.com/in/xinyun5160">LinkedIn</a>
+            <a class="btn ghost" href="assets/resume.pdf" download>下载简历</a>
+          </div>
+        </section>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/portrait.jpg" alt="Portrait of Xin (Michael) Yun" />
+      </div>
     </div>
   </header>
 
-  <!-- Skills -->
-  <section class="section container">
-    <h2 id="skills-title-en">Skills</h2>
-    <h2 id="skills-title-zh" style="display:none;">技能</h2>
+  <!-- Skills：小圆角标签，观感更轻 -->
+  <section class="section">
+    <div class="container">
+      <h2 id="skills-title-en">Skills</h2>
+      <h2 id="skills-title-zh" style="display:none;">技能</h2>
 
-    <div class="skills">
-      <!-- EN -->
       <ul id="skills-en" class="tags">
         <li>R (R Shiny)</li><li>Python</li><li>SAS</li><li>Stata</li><li>SPSS</li><li>Minitab</li><li>LaTeX</li>
         <li>Statistical Modeling</li><li>Machine Learning</li><li>Forecasting</li>
@@ -89,7 +86,6 @@
         <li>Git/GitHub</li><li>Excel</li><li>Google Trends</li><li>Meta Business Suite</li><li>Overleaf</li><li>Markdown</li>
       </ul>
 
-      <!-- ZH -->
       <ul id="skills-zh" class="tags" style="display:none;">
         <li>R（R Shiny）</li><li>Python</li><li>SAS</li><li>Stata</li><li>SPSS</li><li>Minitab</li><li>LaTeX</li>
         <li>统计建模</li><li>机器学习</li><li>预测分析</li>
@@ -100,111 +96,115 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section container">
-    <h2 id="projects-title-en">Projects</h2>
-    <h2 id="projects-title-zh" style="display:none;">项目</h2>
+  <!-- Projects：卡片 + 仓库链接 -->
+  <section class="section">
+    <div class="container">
+      <h2 id="projects-title-en">Projects</h2>
+      <h2 id="projects-title-zh" style="display:none;">项目</h2>
 
-    <div class="grid">
-      <!-- DataFest -->
-      <article class="card">
-        <div class="card-head">
-          <h3>City Leasing Forecast & Market Explorer</h3>
-          <span class="badge">R · XGBoost · Shiny</span>
-        </div>
-        <p id="proj1-en">
-          Interactive dashboard forecasting U.S. office leasing, using XGBoost, lag features (2021Q4–2024Q4),
-          and composite trend scoring; includes heatmaps & 3D market visuals.
-        </p>
-        <p id="proj1-zh" style="display:none;">
-          基于 XGBoost 与滞后特征（2021Q4–2024Q4）的美国办公租赁预测仪表盘，以复合趋势评分衡量市场热度，
-          并提供热力图与 3D 视图。
-        </p>
-        <div class="card-actions">
-          <a class="btn small" target="_blank" href="https://github.com/Migueldesanta/2025datafest">GitHub Repo</a>
-        </div>
-      </article>
+      <div class="grid">
+        <!-- DataFest -->
+        <article class="card">
+          <div class="card-head">
+            <h3>City Leasing Forecast & Market Explorer</h3>
+            <span class="badge">R · XGBoost · Shiny</span>
+          </div>
+          <p id="proj1-en">
+            Dashboard forecasting U.S. office leasing using XGBoost, lag features (2021Q4–2024Q4) and composite trend scores;
+            includes heatmaps & 3D market visuals.
+          </p>
+          <p id="proj1-zh" style="display:none;">
+            基于 XGBoost 与滞后特征（2021Q4–2024Q4）的办公租赁预测仪表盘，使用复合趋势评分衡量市场热度，
+            提供热力图与 3D 视图。
+          </p>
+          <div class="card-actions">
+            <a class="btn small" target="_blank" href="https://github.com/Migueldesanta/2025datafest">GitHub Repo</a>
+          </div>
+        </article>
 
-      <!-- DID App -->
-      <article class="card">
-        <div class="card-head">
-          <h3>Two-Period Difference-in-Differences App</h3>
-          <span class="badge">R · Shiny · Teaching</span>
-        </div>
-        <p id="proj2-en">
-          Educational Shiny app illustrating two-period DID with real & simulated data, assumptions walkthrough,
-          and sensitivity exploration; used by undergraduate cohorts.
-        </p>
-        <p id="proj2-zh" style="display:none;">
-          面向教学的两期 DID 交互应用：结合真实与模拟数据，展示关键假设与敏感性分析，已在本科教学中使用。
-        </p>
-        <div class="card-actions">
-          <a class="btn small" target="_blank" href="https://github.com/EducationShinyAppTeam/Differences_in_Differences_Regression/tree/dev2024_Michael">GitHub Repo</a>
-        </div>
-      </article>
+        <!-- DID App -->
+        <article class="card">
+          <div class="card-head">
+            <h3>Two-Period Difference-in-Differences App</h3>
+            <span class="badge">R · Shiny · Teaching</span>
+          </div>
+          <p id="proj2-en">
+            Educational Shiny app for two-period DID with real/simulated data, assumptions walkthrough and sensitivity exploration.
+          </p>
+          <p id="proj2-zh" style="display:none;">
+            面向教学的两期 DID 交互应用：结合真实与模拟数据，展示关键假设与敏感性分析。
+          </p>
+          <div class="card-actions">
+            <a class="btn small" target="_blank" href="https://github.com/EducationShinyAppTeam/Differences_in_Differences_Regression/tree/dev2024_Michael">GitHub Repo</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- Professional Experience -->
-  <section class="section container">
-    <h2 id="proexp-title-en">Professional Experience</h2>
-    <h2 id="proexp-title-zh" style="display:none;">实习 / 工作经历</h2>
+  <section class="section">
+    <div class="container">
+      <h2 id="proexp-title-en">Professional Experience</h2>
+      <h2 id="proexp-title-zh" style="display:none;">实习 / 工作经历</h2>
 
-    <div class="list">
-      <article class="item">
-        <h3>TAL Education Group — Overseas Operations Intern</h3>
-        <p class="meta"><span>May 2023 – Aug 2023</span> · Chengdu, China</p>
-        <ul id="proexp1-en">
-          <li>Audience research via surveys/interviews & Google Trends; informed product/marketing strategy.</li>
-          <li>Built multidimensional profiles and an R-based engagement prediction model.</li>
-          <li>Managed overseas social accounts (Meta Business Suite), reaching 200K+ weekly interactions.</li>
-        </ul>
-        <ul id="proexp1-zh" style="display:none;">
-          <li>通过问卷/访谈与 Google Trends 开展用户洞察，支撑产品与营销策略。</li>
-          <li>构建多维用户画像，搭建基于 R 的互动预测模型。</li>
-          <li>运营海外社媒（Meta Business Suite），周互动量 200K+。</li>
-        </ul>
-      </article>
+      <div class="list">
+        <article class="item">
+          <h3>TAL Education Group — Overseas Operations Intern</h3>
+          <p class="meta"><span>May 2023 – Aug 2023</span> · Chengdu, China</p>
+          <ul id="proexp1-en">
+            <li>Audience research with surveys/interviews & Google Trends; informed product/marketing strategy.</li>
+            <li>Built multidimensional profiles and an R-based engagement prediction model.</li>
+            <li>Managed overseas social accounts (Meta Business Suite), reaching 200K+ weekly interactions.</li>
+          </ul>
+          <ul id="proexp1-zh" style="display:none;">
+            <li>问卷/访谈与 Google Trends 进行受众洞察，支持产品与营销策略。</li>
+            <li>构建多维用户画像，搭建基于 R 的互动预测模型。</li>
+            <li>运营海外社媒（Meta Business Suite），周互动量 200K+。</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- Research Experience -->
-  <section class="section container">
-    <h2 id="researchexp-title-en">Research Experience</h2>
-    <h2 id="researchexp-title-zh" style="display:none;">研究经历</h2>
+  <section class="section">
+    <div class="container">
+      <h2 id="researchexp-title-en">Research Experience</h2>
+      <h2 id="researchexp-title-zh" style="display:none;">研究经历</h2>
 
-    <div class="list">
-      <article class="item">
-        <h3>Penn State — Research Assistant</h3>
-        <p class="meta"><span>Sep 2024 – Dec 2024</span> · University Park, PA</p>
-        <ul id="researchexp1-en">
-          <li>Compiled a dataset of 849 multinational/delisted firms; validated with academic/policy sources.</li>
-          <li>Data cleaning & modeling in R (tuning, classification, handling missingness).</li>
-          <li>Analyzed industry concentration shifts and firm strategies (M&A, expansion, policy adaptation).</li>
-        </ul>
-        <ul id="researchexp1-zh" style="display:none;">
-          <li>构建包含 849 家跨国/退市公司的数据集，并以学术与政策资料校验。</li>
-          <li>使用 R 完成数据清洗与建模（调参、分类、缺失处理）。</li>
-          <li>研究行业集中度变化与企业策略（并购、扩张与政策适配）。</li>
-        </ul>
-      </article>
+      <div class="list">
+        <article class="item">
+          <h3>Penn State — Research Assistant</h3>
+          <p class="meta"><span>Sep 2024 – Dec 2024</span> · University Park, PA</p>
+          <ul id="researchexp1-en">
+            <li>Built a dataset of 849 multinational/delisted firms; validated with academic/policy sources.</li>
+            <li>Data cleaning & modeling in R (tuning, classification, handling missingness).</li>
+            <li>Analyzed industry concentration shifts and firm strategies.</li>
+          </ul>
+          <ul id="researchexp1-zh" style="display:none;">
+            <li>构建 849 家跨国/退市公司数据集，并以学术与政策资料校验。</li>
+            <li>使用 R 进行数据清洗与建模（调参、分类、缺失处理）。</li>
+            <li>分析行业集中度变化与企业策略。</li>
+          </ul>
+        </article>
 
-      <article class="item">
-        <h3>Vanguard Think Tank for Trans-Pacific Relations — Research Fellow (China Dept.)</h3>
-        <p class="meta"><span>Feb 2022 – Sep 2023</span> · Baltimore, MD</p>
-        <ul id="researchexp2-en">
-          <li>Monthly reports on Chinese domestic politics & Trans-Pacific dynamics for NGO/policy audiences.</li>
-          <li>Synthesized literature & briefs into actionable insights; contributed to policy recommendations.</li>
-        </ul>
-        <ul id="researchexp2-zh" style="display:none;">
-          <li>面向 NGO/政策受众撰写月度简报，分析中国国内政治与跨太平洋局势。</li>
-          <li>整合学术与政策资料，形成可操作的研究洞见，参与政策建议撰写。</li>
-        </ul>
-      </article>
+        <article class="item">
+          <h3>Vanguard Think Tank — Research Fellow (China Dept.)</h3>
+          <p class="meta"><span>Feb 2022 – Sep 2023</span> · Baltimore, MD</p>
+          <ul id="researchexp2-en">
+            <li>Monthly reports on Chinese politics & Trans-Pacific dynamics for NGO/policy audiences.</li>
+            <li>Synthesized literature & briefs into actionable insights; contributed to recommendations.</li>
+          </ul>
+          <ul id="researchexp2-zh" style="display:none;">
+            <li>撰写面向 NGO/政策受众的月度简报，分析中国政治与跨太平洋局势。</li>
+            <li>整合学术与政策材料，形成可操作洞见并参与建议撰写。</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- 页脚 -->
   <footer class="footer">
     <div class="container">
       <span>© <span id="year"></span> <span id="foot-en">Xin (Michael) Yun</span><span id="foot-zh" style="display:none;">云鑫</span></span>
