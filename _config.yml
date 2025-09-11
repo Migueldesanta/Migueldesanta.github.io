@@ -21,12 +21,6 @@ github_username:  Migueldesanta
 linkedin_username: xinyun5160
 # youtube_username:
 
-# Additional icon links
-additional_links:
-  - title: GitHub Portfolio
-    icon: fab fa-github
-    url: https://github.com/Migueldesanta
-
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
