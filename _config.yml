@@ -15,11 +15,8 @@ website: Migueldesanta.github.io
 darkmode: false
 
 # Social links
-# twitter_username:
-github_username:  Migueldesanta
-# instagram_username:
+github_username: Migueldesanta
 linkedin_username: xinyun5160
-# youtube_username:
 
 # About Section
 about_profile_image: images/profile.png
@@ -29,53 +26,58 @@ about_content: |
   My academic interests focus on <mark>public opinion</mark>, <mark>voting behavior</mark>, and the related <mark>statistical methodology</mark>. Recently, I have also been exploring the applications of <mark>large language models (LLMs)</mark> in the social sciences, particularly in political research.
 
 content:
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: The Pennsylvania State University
+        sub_title: Bachelor of Science in Statistics & Political Science
+        caption: May 2025 · University Park, PA
+        description: |
+          GPA: 3.59/4.0  
+
+          Relevant Coursework: Probability Theory, Mathematical Statistics, Statistical Modeling, Stochastic Modeling, Time Series Analysis, Nonparametric Statistics, Survey Sampling, Applied Machine Learning, Politics of Development, International Political Economy, American State Policy Analysis, Political Data Analysis, Political Economy of China, Politics in Contemporary China, Public Opinion & Political Attitudes  
+
+      - layout: left
+        title: The Chinese University of Hong Kong
+        sub_title: Exchange Program
+        caption: Sep 2022 – Jan 2023 · Hong Kong SAR
+
+  - title: Professional Experience
+    layout: list
+    content:
+      - layout: left
+        title: TAL Education Group
+        sub_title: Overseas Operation Intern
+        caption: May 2023 – Aug 2023 · Chengdu, China
+        description: |
+          • Conducted user research via surveys, interviews, and Google Trends to analyze product preferences of U.S. and European senior users, shaping product and marketing strategies.  
+          • Built multidimensional user profiles and developed an R-based engagement prediction model, supporting data-driven content optimization and boosting retention and conversion.  
+          • Managed overseas social media operations through Meta Business Suite, executing content strategies that achieved 200K+ weekly interactions and increased brand visibility.  
+          • Authored market analysis reports and contributed to company website redesign by drafting requirements and product specifications.  
+
   - title: Projects
     layout: list
     content:
       - layout: top-middle
         title: City Leasing Forecast & Market Explorer
+        caption: Apr 2025 · 2025 ASA DataFest, Penn State University, University Park, PA
         link: https://github.com/Migueldesanta/2025datafest
-        additional_links:
-          - title: Source (GitHub)
-            icon: fab fa-github
-            url: https://github.com/Migueldesanta/2025datafest
-        caption: Apr 2025 · 2025 ASA DataFest, Penn State
-        quote: >
-          Interactive R Shiny dashboard forecasting U.S. office leasing activity with explainable ML and market readiness visuals.
         description: |
-          • Built an XGBoost regression workflow with engineered lag features from 2021Q4–2024Q4 to forecast Q1 2025 leasing.
-          • Designed composite trend scoring, heatmaps and 3D visuals to assess competitiveness and investment readiness.
-          • Presented at a national competition organized by the American Statistical Association.
+          • Developed an interactive R Shiny dashboard to forecast Q1 2025 U.S. office leasing activity using XGBoost regression and composite trend scoring.  
+          • Engineered lagged variables from quarterly data (2021 Q4–2024 Q4) to improve prediction accuracy.  
+          • Produced heatmaps and 3D visualizations for market competitiveness and investment-readiness assessment.  
+          • Presented project at a national competition organized by the American Statistical Association.  
 
       - layout: top-middle
         title: Two-Period Difference-in-Differences Regression App
+        caption: Jun 2024 – Dec 2024 · Penn State BOAST Statistics Teaching Research Program, University Park, PA
         link: https://github.com/EducationShinyAppTeam/Differences_in_Differences_Regression/tree/dev2024_Michael
-        additional_links:
-          - title: Source (GitHub)
-            icon: fab fa-github
-            url: https://github.com/EducationShinyAppTeam/Differences_in_Differences_Regression/tree/dev2024_Michael
-        caption: Jun 2024 – Dec 2024 · BOAST Statistics Teaching Research Program
-        quote: >
-          A teaching app to explore DiD assumptions, interpretation, and sensitivity with dynamic visuals.
         description: |
-          • Implemented interactive simulations and real-data modules; aligned UI with BOAST guidelines to improve usability.
-          • Added sensitivity analysis and treatment-effect exploration; adopted by undergraduate cohorts and showcased in research events.
-
-  - title: Experience
-    layout: list
-    content:
-      - layout: left
-        title: TAL Education Group
-        link: https://www.100tal.com
-        sub_title: Overseas Operation Intern
-        caption: May 2023 – Aug 2023 · Chengdu, China
-        quote: >
-          Data-driven user insights and content operations across U.S. & European senior user segments.
-        description: |
-          • Ran surveys/interviews and leveraged Google Trends to map product preferences; informed product & marketing strategy.
-          • Built multidimensional user profiles and an R-based engagement prediction model to support content optimization.
-          • Operated overseas social channels via Meta Business Suite, reaching 200K+ weekly interactions and boosting visibility.
-          • Wrote market analysis reports; contributed requirements & specs for a website redesign.
+          • Designed and implemented an interactive R Shiny application to demonstrate Two-Period Difference-in-Differences regression using simulated and real-world data.  
+          • Integrated features to explore assumptions, interpretations, and sensitivity analysis of treatment effects with dynamic visualizations.  
+          • Optimized user interface to align with BOAST project guidelines, enhancing usability for students and instructors.  
+          • Presented at research showcases; the app was adopted as a pedagogical tool by undergraduate cohorts.  
 
   - title: Research Experience
     layout: list
@@ -85,49 +87,35 @@ content:
         sub_title: Research Assistant
         caption: Sep 2024 – Dec 2024 · University Park, PA
         description: |
-          • Compiled a dataset of 849 multinational & delisted firms (histories, reasons, exchanges) validated against academic/policy sources.
-          • Performed R-based cleaning & modeling (tuning, classification, systematic missing-data handling).
-          • Analyzed industry concentration shifts and corporate strategies (M&A, expansion, policy adaptation).
-          • Delivered structured case studies and empirical outputs for faculty research.
+          • Compiled a dataset of 849 multinational and delisted companies, including stock histories, delisting reasons, and exchanges; validated with academic and policy sources.  
+          • Conducted data cleaning and statistical modeling in R, including parameter tuning, classification, and systematic handling of missing values.  
+          • Analyzed industry-level market concentration shifts and corporate strategies in mergers, expansion, and policy adaptation.  
+          • Delivered structured case studies and data outputs providing empirical evidence for faculty research.  
 
       - layout: left
         title: Vanguard Think Tank for Trans-Pacific Relations
         sub_title: Research Fellow, China Department
-        caption: Feb 2022 – Sep 2023 · Baltimore, MD (Remote/Hybrid)
+        caption: Feb 2022 – Sep 2023 · Baltimore, MD
         description: |
-          • Authored monthly reports on Chinese domestic politics and Trans-Pacific dynamics for NGO & policy stakeholders.
-          • Synthesized literature and policy briefs into actionable insights; edited outputs and contributed to recommendations.
+          • Authored monthly reports analyzing Chinese domestic politics and Trans-Pacific regional dynamics for NGO and policy stakeholders.  
+          • Synthesized academic literature and policy briefs into actionable insights, ensuring analytical rigor.  
+          • Edited research outputs and contributed to policy recommendations.  
 
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: The Pennsylvania State University
-        sub_title: B.S. in Statistics & Political Science · GPA 3.59/4.0
-        caption: May 2025 · University Park, PA
-        description: |
-          Relevant Coursework: Probability Theory, Mathematical Statistics, Statistical/ Stochastic Modeling, Time Series, Nonparametric Statistics, Survey Sampling, Applied ML; International/Comparative Political Economy, Public Opinion & Political Data Analysis, Politics in Contemporary China.
-
-      - layout: left
-        title: The Chinese University of Hong Kong
-        sub_title: Exchange Program
-        caption: Sep 2022 – Jan 2023 · Hong Kong SAR
-
-  - title: Skills
-    layout: text
-    content: |
-      **Technical:** R (R Shiny), Python, SAS, Stata, SPSS, Minitab, LaTeX · Statistical Modeling, Machine Learning, Forecasting, Data Cleaning, Data Visualization  
-      **Research & Professional:** Survey/Interview Methods, Experimental Design, Policy Analysis, Research Writing, Cross-Cultural Communication, Public Speaking  
-      **Tools:** Git/GitHub, Excel, Google Trends, Meta Business Suite, Overleaf, Markdown
-
-  - title: Awards & Honors
+  - title: Awards and Honors
     layout: list
     content:
       - layout: left
         title: Scholarships & Societies
         description: |
           • Colavita Global Program Endowment Scholarship (2021–2022); Kim Anderson Memorial Scholarship (2023–2024); Penn State Enrichment Funds Grant (Summer 2023)  
-          • Dean’s List (multiple semesters); Mortar Board National College Senior Honor Society; Pi Sigma Alpha (Political Science)
+          • Dean’s List (multiple semesters); Mortar Board National College Senior Honor Society; Pi Sigma Alpha National Political Science Honor Society  
+
+  - title: Skills
+    layout: text
+    content: |
+      **Technical Skills:** R (R Shiny), Python, SAS, Stata, SPSS, Minitab, LaTeX; Statistical Modeling, Machine Learning, Forecasting, Data Cleaning, Data Visualization  
+      **Research & Professional Skills:** Survey Design, Interview Methods, Experimental Design, Policy Analysis, Research Writing, Cross-Cultural Communication, Public Speaking  
+      **Tools & Platforms:** Git/GitHub (Version Control), Excel, Google Trends, Meta Business Suite, Overleaf, Markdown (Documentation)  
 
 # Footer
 footer_show_references: false
@@ -142,6 +130,3 @@ sass:
 plugins:
  - jekyll-seo-tag
 
-
-plugins:
- - jekyll-seo-tag
