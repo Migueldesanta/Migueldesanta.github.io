@@ -22,7 +22,7 @@ linkedin_username: xinyun5160
 # youtube_username:
 
 # About Section
-about_profile_image: images/profile.png
+about_profile_image: images/profile.jpg
 about_content: |
   I am a recent graduate of Penn State University with a dual major in Statistics and Political Science. My primary skill is <mark>R</mark> (especially R Shiny) for data analysis and visualization.  
 
