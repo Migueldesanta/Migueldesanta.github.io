@@ -1,132 +1,51 @@
-# Site
-repository: Migueldesanta/Migueldesanta.github.io
-favicon: images/favicon.ico
+# ─── Site ────────────────────────────────────────────────────────
+title: "Xin (Michael) Yun"
+tagline: "Quantitative research portfolio"
+description: "Working paper series and selected projects in causal inference, macro markets, and computational social science."
+url: "https://migueldesanta.github.io"
+baseurl: ""
 
-# Content configuration version
-version: 2
+# ─── Author ──────────────────────────────────────────────────────
+author:
+  name: "Xin (Michael) Yun"
+  email: yun.xin@outlook.com
+  linkedin: xinyun5160
+  github: Migueldesanta
+  location: "Hong Kong"
 
-# Personal info
-name: Xin (Michael) Yun
-# title:   # removed title
-email: yun.xin@outlook.com
-website: Migueldesanta.github.io
+# ─── Build ───────────────────────────────────────────────────────
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Dark Mode (true/false/never)
-darkmode: false
+# Collections — each paper is a separate file in _papers/
+collections:
+  papers:
+    output: true
+    permalink: /papers/:path/
+    sort_by: order
 
-# Social links
-github_username: Migueldesanta
-linkedin_username: xinyun5160
+defaults:
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: paper
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
 
-# About Section
-about_profile_image: images/profile.png
-about_content: |
-  I am a recent graduate of Penn State University with a dual major in Statistics and Political Science. My primary skill is <mark>R</mark> (especially R Shiny) for data analysis and visualization.  
-
-  My academic interests focus on <mark>public opinion</mark>, <mark>voting behavior</mark>, and the related <mark>statistical methodology</mark>. Recently, I have also been exploring the applications of <mark>large language models (LLMs)</mark> in the social sciences, particularly in political research.
-
-content:
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: The Pennsylvania State University
-        sub_title: Bachelor of Science in Statistics & Political Science
-        caption: May 2025 · University Park, PA
-        description: |
-          GPA: 3.59/4.0  
-
-          Relevant Coursework: Probability Theory, Mathematical Statistics, Statistical Modeling, Stochastic Modeling, Time Series Analysis, Nonparametric Statistics, Survey Sampling, Applied Machine Learning, Politics of Development, International Political Economy, American State Policy Analysis, Political Data Analysis, Political Economy of China, Politics in Contemporary China, Public Opinion & Political Attitudes  
-
-      - layout: left
-        title: The Chinese University of Hong Kong
-        sub_title: Exchange Program
-        caption: Sep 2022 – Jan 2023 · Hong Kong SAR
-
-  - title: Professional Experience
-    layout: list
-    content:
-      - layout: left
-        title: TAL Education Group
-        sub_title: Overseas Operation Intern
-        caption: May 2023 – Aug 2023 · Chengdu, China
-        description: |
-          - Conducted user research via surveys, interviews, and Google Trends to analyze product preferences of U.S. and European senior users, shaping product and marketing strategies.
-          - Built multidimensional user profiles and developed an R-based engagement prediction model, supporting data-driven content optimization and boosting retention and conversion.
-          - Managed overseas social media operations through Meta Business Suite, executing content strategies that achieved 200K+ weekly interactions and increased brand visibility.
-          - Authored market analysis reports and contributed to company website redesign by drafting requirements and product specifications.
-
-  - title: Projects
-    layout: list
-    content:
-      - layout: top-middle
-        title: City Leasing Forecast & Market Explorer
-        caption: Apr 2025 · 2025 ASA DataFest, Penn State University, University Park, PA
-        link: https://github.com/Migueldesanta/2025datafest
-        description: |
-          - Developed an interactive R Shiny dashboard to forecast Q1 2025 U.S. office leasing activity using XGBoost regression and composite trend scoring.
-          - Engineered lagged variables from quarterly data (2021 Q4–2024 Q4) to improve prediction accuracy.
-          - Produced heatmaps and 3D visualizations for market competitiveness and investment-readiness assessment.
-          - Presented project at a national competition organized by the American Statistical Association.
-
-      - layout: top-middle
-        title: Two-Period Difference-in-Differences Regression App
-        caption: Jun 2024 – Dec 2024 · Penn State BOAST Statistics Teaching Research Program, University Park, PA
-        link: https://github.com/EducationShinyAppTeam/Differences_in_Differences_Regression/tree/dev2024_Michael
-        description: |
-          - Designed and implemented an interactive R Shiny application to demonstrate Two-Period Difference-in-Differences regression using simulated and real-world data.
-          - Integrated features to explore assumptions, interpretations, and sensitivity analysis of treatment effects with dynamic visualizations.
-          - Optimized user interface to align with BOAST project guidelines, enhancing usability for students and instructors.
-          - Presented at research showcases; the app was adopted as a pedagogical tool by undergraduate cohorts.
-
-  - title: Research Experience
-    layout: list
-    content:
-      - layout: left
-        title: The Pennsylvania State University
-        sub_title: Research Assistant
-        caption: Sep 2024 – Dec 2024 · University Park, PA
-        description: |
-          - Compiled a dataset of 849 multinational and delisted companies, including stock histories, delisting reasons, and exchanges; validated with academic and policy sources.
-          - Conducted data cleaning and statistical modeling in R, including parameter tuning, classification, and systematic handling of missing values.
-          - Analyzed industry-level market concentration shifts and corporate strategies in mergers, expansion, and policy adaptation.
-          - Delivered structured case studies and data outputs providing empirical evidence for faculty research.
-
-      - layout: left
-        title: Vanguard Think Tank for Trans-Pacific Relations
-        sub_title: Research Fellow, China Department
-        caption: Feb 2022 – Sep 2023 · Baltimore, MD
-        description: |
-          - Authored monthly reports analyzing Chinese domestic politics and Trans-Pacific regional dynamics for NGO and policy stakeholders.
-          - Synthesized academic literature and policy briefs into actionable insights, ensuring analytical rigor.
-          - Edited research outputs and contributed to policy recommendations.
-
-  - title: Awards and Honors
-    layout: list
-    content:
-      - layout: left
-        title: Scholarships & Societies
-        description: |
-          - Colavita Global Program Endowment Scholarship (2021–2022); Kim Anderson Memorial Scholarship (2023–2024); Penn State Enrichment Funds Grant (Summer 2023)
-          - Dean’s List (multiple semesters); Mortar Board National College Senior Honor Society; Pi Sigma Alpha National Political Science Honor Society
-
-  - title: Skills
-    layout: text
-    content: |
-      **Technical Skills:** R (R Shiny), Python, SAS, Stata, SPSS, Minitab, LaTeX; Statistical Modeling, Machine Learning, Forecasting, Data Cleaning, Data Visualization  
-      **Research & Professional Skills:** Survey Design, Interview Methods, Experimental Design, Policy Analysis, Research Writing, Cross-Cultural Communication, Public Speaking  
-      **Tools & Platforms:** Git/GitHub (Version Control), Excel, Google Trends, Meta Business Suite, Overleaf, Markdown (Documentation)
-
-# Footer
-footer_show_references: false
-
-# Build settings
-remote_theme: sproogen/resume-theme
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
+# ─── Plugins ─────────────────────────────────────────────────────
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
+# ─── Exclusions ──────────────────────────────────────────────────
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - node_modules/

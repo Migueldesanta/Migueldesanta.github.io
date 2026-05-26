@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<section class="home-hero">
+  <div class="container container-narrow">
+    <div class="hero-eyebrow">A Quantitative Research Portfolio</div>
+    <h1 class="hero-name">Xin (Michael) Yun</h1>
+    <p class="hero-tagline">
+      Working at the intersection of <em>causal inference</em> and
+      <em>macro markets</em>. Currently with Nittan Securities Asia in Hong Kong, producing sovereign-bond and Fed-policy research while building tools to operationalise it.
+    </p>
+    <div class="hero-cta">
+      <a href="#papers">Selected work ↓</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="mailto:{{ site.author.email }}">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section class="papers-section" id="papers">
+  <div class="container container-narrow">
+    <div class="section-eyebrow">Working Papers &amp; Selected Projects</div>
+    <h2 class="section-title">A research series, in progress.</h2>
+    <p class="section-lede">
+      Each entry is a self-contained investigation — pairing an empirical or methodological question with the data, code, and visualisation needed to take it seriously. Ordered by recency.
+    </p>
+
+    <div class="papers-list">
+      {% assign sorted = site.papers | sort: "order" %}
+      {% for paper in sorted %}
+      <article class="paper-card">
+        <div class="paper-card-meta">
+          <span class="paper-card-number">{{ paper.paper_number }}</span>
+          <span class="paper-card-date">{{ paper.date | date: "%b %Y" }}</span>
+          {% for tag in paper.tags limit:3 %}<span class="paper-card-tag">{{ tag }}</span>{% endfor %}
+        </div>
+        <div class="paper-card-body">
+          <h3 class="paper-card-title">
+            <a href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+          </h3>
+          <p class="paper-card-abstract">{{ paper.abstract }}</p>
+          <div class="paper-card-links">
+            <a href="{{ paper.url | relative_url }}">Read</a>
+            {% if paper.links %}{% for link in paper.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}{% endif %}
+          </div>
+        </div>
+        <a href="{{ paper.url | relative_url }}" class="paper-card-arrow" aria-label="Read {{ paper.title }}">→</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="home-about">
+  <div class="container container-narrow">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-eyebrow">About</div>
+        <p>
+          I am a quantitative researcher trained at <strong>Penn State University</strong> in Statistics and Political Science. My work brings rigorous causal-inference methods — difference-in-differences, threshold regression, instrumental variables, event studies — to questions in <strong>fixed income, monetary policy, and computational social science</strong>.
+        </p>
+        <p>
+          I am currently with <strong>Nittan Securities Asia Limited</strong> in Hong Kong, where I produce sovereign-bond and Federal Reserve policy research, and build the dashboards that turn the research into something a desk can actually use.
+        </p>
+      </div>
+      <dl class="about-meta">
+        <dt>Located</dt><dd>{{ site.author.location }}</dd>
+        <dt>Email</dt><dd><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></dd>
+        <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">/in/{{ site.author.linkedin }}</a></dd>
+        <dt>GitHub</dt><dd><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">/{{ site.author.github }}</a></dd>
+        <dt>CV</dt><dd><a href="{{ '/assets/cv.pdf' | relative_url }}">Download PDF →</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>

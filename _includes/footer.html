@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-block">
+        <div class="footer-label">Contact</div>
+        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </div>
+      <div class="footer-block">
+        <div class="footer-label">Located</div>
+        <span>{{ site.author.location }}</span>
+      </div>
+      <div class="footer-block">
+        <div class="footer-label">Elsewhere</div>
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="footer-block">
+        <div class="footer-label">Colophon</div>
+        <span>Set in Newsreader &amp; JetBrains Mono.<br>Built with Jekyll on GitHub Pages.</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ 'now' | date: '%Y' }} {{ site.author.name }}</span>
+      <span class="footer-bottom-meta">Last updated {{ site.time | date: '%B %Y' }}</span>
+    </div>
+  </div>
+</footer>
